@@ -57,17 +57,10 @@ class  SubQuest extends Quest{
     set time(newTime){
         this._time += newTime;
     }
-    set skills(){
-        skill_list = questSkillSelector;
-
-    }
+  
 
 }
 
-function questSkillSelector(){
-    percentage = 100;
-    console.log("What skills comprise this quest?\n Select Skill and percentage")
-}
 
 
 export  default Quest;

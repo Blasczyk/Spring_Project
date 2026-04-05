@@ -1,5 +1,8 @@
-// import { useState } from "react";
+import { useState } from "react";
+import { initialCoreSkills } from "./data/coreSkillsData";
+import { a}
 import Core_Abilities from "./components/CoreSkills";
+
 
 function App(){
   return(
