@@ -14,7 +14,7 @@ function App(){
         <h1>Profile:</h1>
         <h2>Developing title:</h2>
         
-        <Core_Abilities data={data} />
+        <CoreAbilities data={data} />
     </div>
   );
 }
