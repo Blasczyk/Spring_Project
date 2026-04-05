@@ -1,16 +1,20 @@
 import { useState } from "react";
+import CoreAbilities from "./components/CoreSkills";
+import { applyQuestReqards, formatSkillsForRadar } from "./utils/questHelpers";
 import { initialCoreSkills } from "./data/coreSkillsData";
-import { a}
-import Core_Abilities from "./components/CoreSkills";
+
+
 
 
 function App(){
+  const [skills, setSkills] = useState(initialCoreSkills);
+  const data = formatSkillsForRadar(skills);
   return(
     <div>
         <h1>Profile:</h1>
         <h2>Developing title:</h2>
         
-        <Core_Abilities />
+        <Core_Abilities data={data} />
     </div>
   );
 }
