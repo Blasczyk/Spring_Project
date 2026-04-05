@@ -1,10 +1,10 @@
 import { RadarChart, Radar, PolarAngleAxis, Legend, PolarGrid, PolarRadiusAxis} from 'recharts';
-import { RechartsDevtools } from "@recharts/devtools";
+// import { RechartsDevtools } from "@recharts/devtools";
 
 const data = [
     {coreSkill: "Strength", A:20, B:31},
     {coreSkill: "Dexterity", A:20, B:31},
-    {coreSkill: "Constitution", A:20, B:31},
+    {coreSkill: "Constitution", A:20, B:551},
     {coreSkill: "Intelligence", A:20, B:31},
     {coreSkill: "Wisdom", A:20, B:31},
     {coreSkill: "Charisma", A:20, B:31}
@@ -36,7 +36,7 @@ function Core_Abilities ({isAnimationActive = true}){
                         isAnimationActive={isAnimationActive}
                         />
                         <Legend />
-                        <RechartsDevtools />
+                        {/* <RechartsDevtools /> */}
                     </RadarChart>
                     );
                 }
