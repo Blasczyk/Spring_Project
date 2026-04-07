@@ -9,7 +9,7 @@ export function  applyQuestReqards(currentSkills, rewards){
     }
     return updatedSkills;
 }
-
+//Reads the skills levels and shows them in the Radar graph
 export function formatSkillsForRadar(skills){
     return [
         {coreSkill: "Strength", score: skills.strength},

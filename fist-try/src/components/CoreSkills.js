@@ -1,7 +1,7 @@
 import { RadarChart, Radar, PolarAngleAxis, Legend, PolarGrid, PolarRadiusAxis} from 'recharts';
 // import { RechartsDevtools } from "@recharts/devtools";
 
-function CoreAbilities ({data ,isAnimationActive = true}){
+function Core_Abilities ({data ,isAnimationActive = true}){
         return(
             <RadarChart 
                 style={{width:'100%', maxWidth:'500px',maxHeight: '70vh', aspectRatio : 1}}
