@@ -1,5 +1,5 @@
 
-
+import { quests } from "../data/questData";
 /**
  * The Quests needs to have three types of Quests.
  * Daily: Things you should do Daily.
@@ -8,6 +8,9 @@
  */
 function CurrentQuests(){
     // First thing is primary quest.
+    const listItem = quests.map( quest =>
+        <li key=
+    )
 }
 
 class Quest{
