@@ -6,14 +6,40 @@ import { quests } from "../data/questData";
  * Short-terrm: Small Goals required to achieve the primary.
  * Primary: the Main goal
  */
-function CurrentQuests(){
-    // First thing is primary quest.
-    const listItem = quests.map( quest =>
-        <li key={quests.id}>
-            <b>quests.name</b>
-        </li>
-    )
+import { quests } from "../data/questData";
+
+export function FoundationQuests() {
+  const listItems = quests
+    .filter((quest) => quest.category === "Foundation")
+    .map((quest) => (
+      <li key={quest.id}>
+        <b>{quest.name}</b>
+      </li>
+    ));
+
+  return <ul>{listItems}</ul>;
 }
 
+export function PrimaryQuests() {
+  const listItems = quests
+    .filter((quest) => quest.category === "Primary")
+    .map((quest) => (
+      <li key={quest.id}>
+        <b>{quest.name}</b>
+      </li>
+    ));
 
-export  default CurrentQuests;
+  return <ul>{listItems}</ul>;
+}
+
+export function SideQuests() {
+  const listItems = quests
+    .filter((quest) => quest.category === "Side")
+    .map((quest) => (
+      <li key={quest.id}>
+        <b>{quest.name}</b>
+      </li>
+    ));
+
+  return <ul>{listItems}</ul>;
+}
